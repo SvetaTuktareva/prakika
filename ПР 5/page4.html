@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Проверка панграммы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .input-container {
+            margin: 20px 0;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: red;
+        }
+        
+        #missingLetters {
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проверка панграммы</h1>
+    <p>Введите предложение на русском языке для проверки, является ли оно панграммой.</p>
+    
+    
+    <div class="input-container">
+        <textarea id="textInput" placeholder="Введите текст здесь..."></textarea>
+        <button onclick="checkText()">Проверить</button>
+    </div>
+    
+    <div id="result"></div>
+    <div id="missingLetters"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
