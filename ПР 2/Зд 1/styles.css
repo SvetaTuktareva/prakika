@@ -1,0 +1,95 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.eight{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.line1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.line2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.line3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.line4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.eight .line4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px; 
+}
+.eight .line2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px; 
+}
+.line5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one .line1{
+    justify-content: flex-start
+}
+
+.eight .line1{
+    justify-content: flex-start
+}
+
+.eight .line2 {
+    justify-content: flex-end;
+}
+
+.eight .line4 {
+    justify-content: flex-end;
+}
+
+.square {
+    background-color: gray;
+    height: 16vh;
+    width: 33.3%;
+}
+
+
+.one .square {
+    background-color: #BA55D3;
+}
+
+
+.eight .square {
+    background-color: #7B68EE;
+}
