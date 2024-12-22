@@ -1,0 +1,28 @@
+.image-container {
+           width: 500px;
+           height: 400px;
+           position: relative;
+           overflow: hidden;
+           margin: 50px auto;
+       }
+        .image-part {
+           position: absolute;
+           opacity: 0;
+           animation: movePart 1.5s ease-in-out forwards;
+       }
+        @keyframes movePart {
+           0% {
+               opacity: 0;
+               transform: translate(var(--start-x), var(--start-y)) scale(0.5);
+           }
+           100% {
+               opacity: 1;
+               transform: translate(var(--end-x), var(--end-y)) scale(1);
+           }
+       }
+        .final-image {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           display: none;
+       }
