@@ -1,0 +1,117 @@
+<html>
+<html lang="ru">
+<head>
+    <title>Язык программирования C</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+
+    <h1>Язык программирования C</h1>
+
+    <!-- Содержание -->
+    <div class="toc">
+        <h2>Содержание</h2>
+        <ul>
+            <li><a href="#history">История создания</a></li>
+            <li><a href="#overview">Краткий обзор языка</a></li>
+            <li><a href="#examples">Примеры кода</a></li>
+        </ul>
+    </div>
+
+    <!-- История создания -->
+    <h2 id="history">История создания</h2>
+    <img src="1.jpg" width="400" height="200" alt="История C" class="img-left">
+    <p>Язык C был разработан в начале 1970-х годов <strong>Деннисом Ритчи</strong> в Bell Labs. Он был создан для системного программирования и, в частности, для операционной системы <em>UNIX</em>. C стал развитием более раннего языка <em>B</em>, который, в свою очередь, произошёл от BCPL. Изначально C предназначался для написания операционной системы UNIX на PDP-11.</p>
+  
+
+    <!-- Краткий обзор языка -->
+    <h2 id="overview">Краткий обзор языка</h2>
+    <img src="2.png" width="250" height="100" alt="Логотип C++" class="img-right">
+    <p>C — это <strong>императивный</strong>, <strong>структурный</strong> язык программирования. Он относится к языкам среднего уровня, так как имеет как черты языков высокого уровня (типы данных, циклы), так и возможность работы на уровне железа (указатели, битовые операции).</p>
+            <p>Основные характеристики языка C:</p>
+            <ol>
+              <li>Статическая типизация</li>
+              <li>Низкоуровневый доступ к памяти</li>
+              <li>Процедурное программирование</li>
+              <li>Переносимость кода</li>
+            </ol>
+            <p>Язык C имеет относительно небольшой набор ключевых слов, что делает его достаточно компактным, но при этом очень мощным.</p>
+            <p><strong>Синтаксис C</strong> основывается на <em>блоках кода</em>, которые определяются фигурными скобками <code>{}</code>. Программы состоят из функций, среди которых есть одна главная — <code>main()</code>. Важным элементом являются указатели, которые позволяют работать с адресами памяти. </p>
+    
+
+
+    <table>
+        <caption>Основные характеристики C</caption>
+        <tr>
+            <th>Характеристика</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>Простая языковая база</td>
+            <td>Многие существенные возможности вынесены в стандартную библиотеку, например математические функции или функции работы с файлами</td>
+        </tr>
+        <tr>
+            <td>Ориентация на процедурное программирование</td>
+            <td>Это удобно с точки зрения использования структурного подхода к процессу программирования</td>
+        </tr>
+        <tr>
+            <td>Контроль над памятью</td>
+            <td>программисты могут управлять памятью вручную, что позволяет оптимизировать использование оперативной памяти</td>
+        </tr>
+	    <td>Широкое использование</td>
+            <td> C используется во многих проектах, включая операционные системы (например, Unix и Linux) и программное обеспечение для встроенных систем</td>
+        </tr>
+    </table>
+
+    <!-- Примеры кода -->
+    <h2 id="examples">Примеры кода</h2>
+    <p>Пример 1: Вывод сообщения на экран</p>
+            <pre><code class="code-example">
+<span class="preprocessor">#include</span> &lt;stdio.h&gt;
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="function">printf</span>(<span class="string">"Привет, мир!\n"</span>);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+            </code></pre>
+
+            <p>Пример 2: Простейшая функция</p>
+            <pre><code class="code-example">
+<span class="keyword">int</span> <span class="function">add</span>(<span class="keyword">int</span> a, <span class="keyword">int</span> b) {
+    <span class="keyword">return</span> a + b;
+}
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="keyword">int</span> result = <span class="function">add</span>(<span class="number">5</span>, <span class="number">3</span>);
+    <span class="function">printf</span>(<span class="string">"Сумма: %d\n"</span>, result);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+            </code></pre>
+ <img src="3.png" width="400" height="200" alt="Пример кода" class="img-center">
+<p>Пример 3: Работа с массивами</p>
+              <pre><code class="code-example">
+<span class="preprocessor">#include</span> &lt;stdio.h&gt;
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="keyword">int</span> numbers[<span class="number">5</span>] = {<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>};
+    <span class="keyword">int</span> i;
+    
+    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {
+        <span class="function">printf</span>(<span class="string">"%d "</span>, numbers[i]);
+    }
+    <span class="function">printf</span>(<span class="string">"\n"</span>);
+    
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+            </code></pre>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Список использованных тегов: h1, h2, p, img, ul, li, ol, div, table, th, td, caption, span, a, etc, section, p, tr, code.</p>
+        <p>Список использованных CSS-свойств: font-family, font-size, color, background-color, margin, padding, border, text-align, float, display, list-style-type, list-style-image, table-layout, width, height, line-height, text-decoration, overflow, position, z-index, box-shadow, transition, opacity, cursor, grid-template-columns, grid-gap, flex-direction, justify-content, align-items, flex-wrap, text-transform.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+ @font-face {
+    font-family: 'CodeFont';
+    src: url('fonts/code-font.ttf') format('truetype');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            font-family: 'CustomFont', sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #555;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .img-left {
+            float: left;
+            margin: 10px 15px 10px 0;
+        }
+
+        .img-right {
+            float: right;
+            margin: 10px 0 10px 15px;
+        }
+
+        .img-center {
+            display: block;
+            margin: 15px auto;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            background-color: #BA55D3;
+        }
+
+        th {
+            background-color: Purple;
+        }
+
+        ul {
+            margin: 15px 0;
+        }
+
+        .custom-marker ul {
+            list-style: none;
+            padding-left: 0;
+            width: 20%;
+        }
+
+        .custom-marker li {
+            background: url('marker.png') no-repeat left center;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        .code {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+
+        .code .keyword {
+            color: #569cd6;
+        }
+
+        .code .string {
+            color: #d69d85;
+        }
+
+        .code .comment {
+            color: #6a9955;
+        }
+
+        .toc {
+            margin: 20px;
+            padding: 10px;
+            background: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            font-size: 12px;
+        }
